@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pogoda</title>
+	<link rel="Stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/font/weathericons-regular-webfont.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	
+</head>
+	<body class="full">
+	<div class="wrapper">
+		<div class="container">
+			<div class="header"><h1></h1></div>
+			<div class="weatherbox">
+				<div class="locationbox">
+					<div class="locactioninfobox">
+						<div class="cityarea">
+							<h2 id="cityname"></h2>
+						</div>
+						<div class="countryarea">
+							<h3 id="state"></h3>
+							<h3 id="country"></h3>
+						</div>
+					</div>
+					<div class="dropdownlocation">
+						<div class="dropdown">
+							<span tabindex="0" onclick="return true"><i class="fa fa-globe" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							<div tabindex="0" onclick="return true"></div>
+							<ul id="testMenu">
+								<li onclick="getLocation();"><a href="#">Wybierz miejscowość</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Miasta</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mainline"><hr></div>
+				<div class="temperaturearea">
+					<div class="toptempbox">
+						<div class="tempbox">
+							<span id="temp"></span>
+						</div>
+						<div class="wconditionsbox">
+							<span id="wparameter"></span>
+							<span id="wdescription"></span>
+						</div>
+					</div>
+					<div class="weather main-toggle"> <!-- Begin Unit Switch -->
+						<span>F</span>
+						<button id="unit-switch"><span id="unit-toggle"></span></button>
+						<span>C</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</body>
+</html>
